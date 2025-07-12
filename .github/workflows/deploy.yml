@@ -7,23 +7,23 @@ on:
 
 jobs:
   deploy:
-    name: Deploy para Ubuntu Server
+    
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout do código
+      
         uses: actions/checkout@v4
 
-      - name: Configura SSH
+    
         uses: webfactory/ssh-agent@v0.9.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - name: Copia arquivos para o servidor via rsync
+      
         run: |
           rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" ./ ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.DEPLOY_PATH }}
 
-      - name: Executa comandos no servidor remoto (docker-compose up)
+      
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} << 'EOF'
             cd ${{ secrets.DEPLOY_PATH }}
