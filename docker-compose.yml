@@ -8,7 +8,7 @@ services:
     ports:
       - "3000:3000"
     environment:
-      - DATABASE_URL=postgres://user:password@db:5432/mydb
+      - DATABASE_URL=postgres://user:renan@db:1234/mydb
     depends_on:
       - db
 
