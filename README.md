@@ -22,7 +22,7 @@ ls,
 sudo apt update,
 sudo apt install,
 
-Esse comando básicos me ajudaram em alguns exercicios.
+Esses comando básicos me ajudaram em alguns exercicios.
 
 Fiz testes em um modem local para executar configurações e tentar fazer liberação externa para SSH, e aplicar o deploy do exercicio '3. (Bônus) Explique como você faria o deploy dessa stack em um cluster Kubernetes.' e ter conexão web com meu git hub, porém não conseguir por questões locais. 
 
