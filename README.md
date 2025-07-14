@@ -11,16 +11,16 @@ Utilizei o WSL para integrar no meu sistema windows e permitir que eu faça coma
 
 Usei os seguintes comando dentro do unbuntu;
 
-systemctl
-docker run
-htop
-attop
-uptime
-clear
-mkdir
-ls
-sudo apt update
-sudo apt install
+systemctl,
+docker run,
+htop,
+attop,
+uptime,
+clear,
+mkdir,
+ls,
+sudo apt update,
+sudo apt install,
 
 Esse comando básicos me ajudaram em alguns exercicios.
 
